@@ -13,9 +13,9 @@ Gmail captchas come in two forms:  Street names, and building numbers.  CaptchaS
 PyTesser can be used to interpret an image of well formed text (like the text you are reading).  Captchas are obviously not well formed.  Therefore, a number of mutations (ie. changing in contrast, cascading, tilting, etc.) are applied to the input image.  After each mutation, PyTesser is used to interpret the text.  Most of the interpretations will be no good due to image noise.  These noisy interpretations will have seemingly random names.  The correct interpretations will have identical names.  Therefore, even though the number of correct interpretations will be few, the number of appearances of the correct name will exceed those of all others (in most cases).
 
 ## Input & Preparation & Outputs
-1)  Have your desired image named "image.jpg"
-2)  python captchaSolver.py
-3)  The final output marked prediction will be False if no confident guess could be made.  Otherwise, it will be the numerical value of the captcha.
+- 1)  Have your desired image named "image.jpg"
+- 2)  python captchaSolver.py
+- 3)  The final output marked prediction will be False if no confident guess could be made.  Otherwise, it will be the numerical value of the captcha.
 
 ## Other
 The folder "Images" has some sample images
